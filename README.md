@@ -497,8 +497,3 @@ make -C <sony-tree> M=$PWD ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- modules
 The CRCs used are in `module/sony-Module.symvers`. The ext4 image is 8 MiB,
 4 KiB blocks, the `.ko` at the root, and `u:object_r:vendor_file:s0` on both
 the root inode and the module file.
-
-## Author
-
-pearlxcore. Built on top of the public CVE-2023-6931 research and the Sony GPL
-kernel source. The module only writes two bytes.
